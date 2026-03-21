@@ -28,12 +28,25 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+span {
     font-family: "Koh Santepheap", serif;
     font-weight: 400;
-    font-size: 48px;
+}
+
+h1 {
+    font-size: 48px;;
+}
+
+#title-sobre {
+    font-size: 24px;
+}
+
+h3, span {
+    font-size: 32px;
+}
+
+span {
+    color: var(--brand-color);
 }
 
 /*header*/
@@ -75,7 +88,7 @@ a {
     text-decoration: none;
 }
 
-/*sections*/
+/*inicio*/
 .s-inicio {
     display: flex;
     align-items: center;
@@ -84,29 +97,25 @@ a {
     margin: 4rem;
 }
 
-.inicio {
+.inicio-content {
     display: flex;
     flex-direction: column;
     gap: 15px;
     max-width: 545px;
 }
 
-.inicio button {
+.inicio-content button {
     max-width: 30%;
     min-width: 229px;
     margin-top: 35px;
 }
 
-.sobre {
+/*sobre*/
+.sobre-content {
     display: flex;
     flex-direction: column;
     max-width: 520px;
     gap: 5px;
-}
-
-h2 {
-    font-size: 24px;
-    color: var(--brand-color);
 }
 
 .s-tradicional {
@@ -117,20 +126,61 @@ h2 {
     margin: 4rem;
 }
 
+.s-populares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+/*populares*/
+.populares-content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 40px;
+}
+
+.card {
+    background-color: #F8F5F2;
+    position: relative; 
+    border-radius: 10px;
+    padding: 14rem 20px 30px;
+    max-width: 384px;
+    height: 434px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
 /*textos*/
 #texto-sobre {
     margin-top: 25px;
 }
 
-#texto-inicio {
+#texto-inicio, #comentario p {
     font-size: 24px;
 }
 
 /*tamanho imagens*/
-#image-sushi {
+#s-inicio-image {
     max-width: 400px;
 }
 
-#image-tradicional {
+#s-tradicional-image {
     max-width: 592px;
+}
+
+.card-img {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
 }
