@@ -3,62 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/style.css">
     <title>FoodJP</title>
 </head>
 <body>
-    
     <header>
-        <div class="menu container">
+        <div class="menu">
             <figure>
                 <img src="img/logo.svg" alt="logo FoodJP">
             </figure>
             <nav>
                 <ul>
-                    <li>Inicio</li>
-                    <li>Sobre nós</li>
-                    <li>Populares</li>
+                    <a href="#inicio"><li>Inicio</li></a>
+                    <a href="#sobre"><li>Sobre nós</li></a>
+                    <a href="#populares"><li>Populares</li></a>
                 </ul>
             </nav>
             <button>Baixar o App</button>
         </div>
-        
     </header>
 
     <main>
-        <section>
-            <div class="container">
-                <div class="inicio">
-                    <h1>Comida Oriental</h1>
-                    <p>
-                        A culinária Japonesa é bastante equilibrada, 
-                        sendo muito rica em peixes (ômega 3),
-                        vegetais, massas e ingredientes frescos.
-                    </p>
-                    <button>Ver o cardápio</button>
+        <div class="container">
+            <section>
+                <div class="s-inicio">
+                    <div class="inicio">
+                        <h1>Comida Oriental</h1>
+                        <p id="texto-inicio">
+                            A culinária Japonesa é bastante equilibrada, 
+                            sendo muito rica em peixes (ômega 3),
+                            vegetais, massas e ingredientes frescos.
+                        </p>
+                        <button>Ver o cardápio</button>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="img/image1.png" alt="sushi" id="image-sushi">
+                        </figure>
+                    </div>
                 </div>
-                <div>
-                    <figure>
-                        <img src="img/comida-oriental.png" alt="sushi">
-                    </figure>
-                </div>
-            </div>
-            
-        </section>
+                
+            </section>
 
-        <section class="sobre-nos">
-            <figure>
-                <img src="img/tradicional.png" alt="">
-            </figure>
-            <h2>Sobre nós</h2>
-            <h1>Feita de forma tradicional</h2>
-            <p>
-                Cada prato "feita de forma tradicional" é uma 
-                ode à excelência. Desde o meticuloso corte do 
-                sashimi até a preparação delicada do sushi, cada 
-                etapa é uma reverência à herança culinária do Japão.
-            </p>
-        </section>
+            <section>
+                <div class="s-tradicional">
+                    <div>
+                        <figure>
+                            <img src="img/image2.png" alt="" id="image-tradicional">
+                        </figure>
+                    </div>
+                    <div class="sobre">
+                        <h2>Sobre nós</h2>
+                        <h1>Feita de forma tradicional</h2>
+                        <p id="texto-sobre">
+                            Cada prato "feita de forma tradicional" é uma 
+                            ode à excelência. Desde o meticuloso corte do 
+                            sashimi até a preparação delicada do sushi, cada 
+                            etapa é uma reverência à herança culinária do Japão.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 </body>
 </html>
