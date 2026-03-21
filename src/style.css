@@ -37,7 +37,7 @@ h1 {
     font-size: 48px;;
 }
 
-#title-sobre {
+#title-sobre, .s-comentarios p {
     font-size: 24px;
 }
 
@@ -155,8 +155,12 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     text-align: center;
+}
+
+.s-populares p {
+    font-size: 18px;
 }
 
 /*comentários*/
@@ -165,6 +169,23 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    padding: 40px;
+}
+
+.cards-comentarios {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #F8F5F2;
+    border-radius: 10px;
+    max-width: 592px;
+    min-height: 390px;
     padding: 40px;
 }
 
@@ -194,7 +215,11 @@ a {
     width: 300px;
 }
 
-/*divider*/
+.s-comentarios-profile {
+    max-width: 120px;
+}
+
+/*divisória*/
 .divider {
     width: 65%;
     height: 5px;
