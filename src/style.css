@@ -13,13 +13,17 @@
     border: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--principal-font);
     font-size: 20px;
     color: #232323;
 }
 
-.container {
+main {
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
@@ -48,8 +52,18 @@ h3, span {
 span {
     color: var(--brand-color);
 }
+section {
+    scroll-margin-top: 10rem;
+}
 
 /*header*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+}
+
 .menu {
     display: flex;
     justify-content: center;
@@ -69,18 +83,20 @@ ul {
 button {
     background-color: var(--brand-color);
     color: #fff;
-    padding: 10px 35px;
+    padding: 0.8rem 1.5rem;
     border-radius: 30px;
     font-family: var(--principal-font);
     font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
 }
 
 .menu button {
     min-width: 207px;
-}
-
-button:focus {
-    cursor: pointer;
 }
 
 a {
@@ -131,15 +147,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8rem;
+    gap: 10rem;
 }
 
-/*populares*/
 .populares-content {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 .card {
@@ -149,6 +163,12 @@ a {
     padding: 14rem 20px 30px;
     max-width: 384px;
     height: 434px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card-content {
@@ -173,9 +193,9 @@ a {
 }
 
 .cards-comentarios {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 
 .comentario {
