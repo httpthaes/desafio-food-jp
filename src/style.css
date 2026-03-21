@@ -15,6 +15,14 @@
 
 body {
     font-family: var(--principal-font);
+    font-size: 20px;
+    color: #232323;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 h1,
@@ -25,19 +33,16 @@ h5,
 h6 {
     font-family: "Koh Santepheap", serif;
     font-weight: 400;
+    font-size: 48px;
 }
 
-.image {
-    max-width: 100%;
-    display: block;
-}
-
-.menu.container {
+/*header*/
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 0;
-    gap: 10%;
+    gap: 15rem;
 }
 
 ul {
@@ -45,23 +50,87 @@ ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 60px;
+    gap: 3.5rem;
 }
 
 button {
     background-color: var(--brand-color);
     color: #fff;
-    padding: 10px 30px;
-    border-radius: 20px;
+    padding: 10px 35px;
+    border-radius: 30px;
     font-family: var(--principal-font);
-    font-weight: 500;
+    font-size: 20px;
+}
+
+.menu button {
+    min-width: 207px;
 }
 
 button:focus {
     cursor: pointer;
 }
 
-.container {
+a {
+    color: #232323;
+    text-decoration: none;
+}
+
+/*sections*/
+.s-inicio {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 16rem;
+    margin: 4rem;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 545px;
+}
+
+.inicio button {
+    max-width: 30%;
+    min-width: 229px;
+    margin-top: 35px;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    max-width: 520px;
+    gap: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--brand-color);
+}
+
+.s-tradicional {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    margin: 4rem;
+}
+
+/*textos*/
+#texto-sobre {
+    margin-top: 25px;
+}
+
+#texto-inicio {
+    font-size: 24px;
+}
+
+/*tamanho imagens*/
+#image-sushi {
+    max-width: 400px;
+}
+
+#image-tradicional {
+    max-width: 592px;
 }
