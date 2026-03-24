@@ -52,6 +52,7 @@ h3, span {
 span {
     color: var(--brand-color);
 }
+
 section {
     scroll-margin-top: 10rem;
 }
@@ -66,10 +67,10 @@ header {
 
 .menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 40px 0;
-    gap: 15rem;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -117,7 +118,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16rem;
+    gap: 4rem;
     margin-top: 25px;
 }
 
@@ -129,9 +130,8 @@ a {
 }
 
 .inicio-content button {
-    max-width: 30%;
-    min-width: 229px;
-    margin-top: 35px;
+    width: 100%;
+    max-width: 229px;
 }
 
 /*sobre*/
@@ -146,8 +146,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6rem;
-    margin: 4rem;
+    gap: 3rem;
+    margin: 4rem 0;
 }
 
 .s-populares {
@@ -161,33 +161,37 @@ a {
 .populares-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
+    gap: 4rem;
+    padding: 0 20px;
+} 
 
 .card {
     background-color: #F8F5F2;
-    position: relative; 
-    border-radius: 10px;
-    padding: 14rem 20px 30px;
-    max-width: 384px;
-    height: 434px;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     transition: 0.3s;
+
+    max-width: 384px;
+    margin: 0 auto;
+    padding: 10rem 20px 25px;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+
+    transform: translateY(-8px);
 }
 
 .card-content {
     display: flex;
     flex-direction: column;
+    gap: 8px;
     align-items: center;
-    gap: 15px;
-    text-align: center;
 }
 
-.s-populares p {
+.card-content p {
+    max-width: 300px;
     font-size: 18px;
 }
 
@@ -201,8 +205,7 @@ a {
 }
 
 .cards-comentarios {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     gap: 2rem;
 }
 
@@ -227,23 +230,33 @@ a {
 }
 
 /*tamanho imagens*/
+#menu-bar {
+    display: none;
+}
+
 #s-inicio-image {
+    width: 100%;
     max-width: 400px;
 }
 
 #s-tradicional-image {
+    width: 100%;
     max-width: 592px;
 }
 
 .card-img {
     position: absolute;
-    top: -120px;
+    top: 0;
     left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
+    transform: translate(-50%, -50%);
+    
+    width: 85%;
+    max-width: 300px;
+    height: auto;
 }
 
 .s-comentarios-profile {
+    width: 100%;
     max-width: 120px;
 }
 
@@ -261,7 +274,6 @@ a {
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 40px;
-    gap: 15rem;
 }
 
 footer img {
