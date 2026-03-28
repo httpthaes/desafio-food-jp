@@ -205,7 +205,8 @@ a {
 }
 
 .cards-comentarios {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 
@@ -278,4 +279,61 @@ a {
 
 footer img {
     padding-left: 10px;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+
+    .menu {
+        gap: 2rem;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    #menu-bar {
+        display: block;
+        width: 1.5rem;
+    }
+
+    .s-inicio {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .inicio-content {
+        align-items: center;
+    }
+
+    .s-tradicional, .cards-comentarios {
+        flex-direction: column;
+    }
+    
+    .s-populares {
+        gap: 7rem;
+    }
+
+    .populares-content {
+        grid-template-columns: 1fr;
+        gap: 8rem;
+    }
+
+    .cards-comentarios {
+        display: flex;
+    }
+
+    .card-content {
+        padding-top: 10px;
+    }
+
+    .card {
+        padding-top: 5rem;
+    }
+
+    .card-img {
+        max-width: 180px;
+    }
 }
